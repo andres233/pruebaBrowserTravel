@@ -1,0 +1,107 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Documentacion API - Prueba Tecnica - BrowserTravel",
+        "description": "Documentacion elaborada con swagger para prueba tecnica browser travel(by Andres Felipe Cuevas Quiroga)",
+        "contact": {
+            "email": "andres-felipe32@hotmail.com"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/dataplaces": {
+            "get": {
+                "tags": [
+                    "DataByPlaces"
+                ],
+                "summary": "Mostrar informacion por lugares",
+                "operationId": "107acfe7a3cedb70ce7b31b97028dd80",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    },
+                    "406": {
+                        "description": "Not acceptable"
+                    }
+                }
+            }
+        },
+        "/api/places": {
+            "get": {
+                "tags": [
+                    "Places"
+                ],
+                "summary": "Mostrar lugares",
+                "operationId": "2fd1be89008cc6f268dded20a9f48b19",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    },
+                    "406": {
+                        "description": "Not acceptable"
+                    }
+                }
+            }
+        },
+        "/api/places/{id}": {
+            "get": {
+                "tags": [
+                    "Places"
+                ],
+                "summary": "Mostrar lugares por id",
+                "operationId": "29d2a8889f7be7c728f292cff64bc54b",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    },
+                    "406": {
+                        "description": "Not acceptable"
+                    }
+                }
+            }
+        },
+        "/api/types": {
+            "get": {
+                "tags": [
+                    "Types"
+                ],
+                "summary": "Mostrar tipos de reportes",
+                "operationId": "9ec8d8379280dcb943ee40f04552232e",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    },
+                    "406": {
+                        "description": "Not acceptable"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
